@@ -15,7 +15,6 @@ const sendVerificationLink = require("./sendVerificationLink");
 const sendOTP = require("./sendOTP");
 const verifyAccountUsingLink = require("./verifyAccountUsingLink");
 const verifyAccountUsingOTP = require("./verifyAccountUsingOTP");
-const changePassword = require("./changePassword");
 
 
 // define routes without rate limiting
@@ -32,7 +31,6 @@ router.use("/forget-password", forgetPassword);
 router.use("/reset-password", resetPassword);
 router.use("/send-verification-link", sendVerificationLink);
 router.use("/send-otp", sendOTP);
-router.use("/change-password", changePassword);
 
 // Verification routes
 router.use("/verify-account-link", verifyAccountUsingLink);
